@@ -28,6 +28,6 @@ jobs:
         uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.MY_VM }}
-        - name: create .ssh/known_hosts
-          run: |
-            ssh-keyscan -H -t rsa -v 130.61.160.127 >> ~/.ssh/known_hosts
+    - name: create .ssh/known_hosts
+      run: |
+        ssh-keyscan -H -t rsa -v 130.61.160.127 >> ~/.ssh/known_hosts
