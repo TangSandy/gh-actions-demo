@@ -34,4 +34,4 @@ jobs:
       run: |
         echo "ich bin hier"
         ls -l target/
-        scp target/gh-actions-demo-1.0.0-SNAPSHOT-runner.jar ${{ secrets.ORAVM_USER }}@{{ secrets.ORAVM_IP }};
+        scp target/gh-actions-demo-1.0.0-SNAPSHOT-runner.jar ${{ secrets.ORAVM_USER }}@${{ secrets.ORAVM_IP }};
